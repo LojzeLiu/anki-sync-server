@@ -1,7 +1,10 @@
-FORM python:2.7.16
+FROM python:3.5
 MAINTAINER Lojze lojze@foxmail.com
-EVN CODEPAHT /anki-sync_server
 
-COPY ./anki-sync-server $CODEPATH
+COPY ./anki-sync-server /anki-sync_server
 
-WORKDIR $CODEPATH
+WORKDIR /anki-sync_server
+
+RUN pip install -r ./requirements.txt
+
+CMD ["python", "-m", "ankisyncd"]
