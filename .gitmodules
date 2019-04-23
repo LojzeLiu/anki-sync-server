@@ -1,3 +1,0 @@
-[submodule "anki-bundled"]
-	path = anki-bundled
-	url = git@github.com:dae/anki.git
