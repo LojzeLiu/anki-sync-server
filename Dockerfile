@@ -1,4 +1,4 @@
-FROM python:3.5
+FROM python:3.5-alpine
 MAINTAINER Lojze lojze@foxmail.com
 
 COPY ./anki-sync-server /anki-sync_server
