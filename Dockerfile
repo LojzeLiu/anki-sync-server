@@ -1,7 +1,7 @@
 FROM python:3.5-alpine
 MAINTAINER Lojze lojze@foxmail.com
 
-COPY ./anki-sync-server /anki-sync_server
+COPY ./bin/anki-sync-server /anki-sync_server
 
 WORKDIR /anki-sync_server
 
